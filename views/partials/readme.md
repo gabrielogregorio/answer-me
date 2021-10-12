@@ -1,0 +1,1 @@
+Partes de layout, como header e footer
