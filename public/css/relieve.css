@@ -1,0 +1,267 @@
+:root {
+  --primary: #009980;
+  --inverse: #fff;
+  --box-shadow: 0 3px 3px 3px #45454517;
+  --box-shadow-minimal: 0 0px 1px 1px #45454517;
+  --red: #e63241;
+  --orange: #f3711a;
+  --blue: #3295e6;
+  --green: #0ccf2d;
+  --bg-primary: #eee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 400;
+  color: #454545;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+}
+
+h1, h2 {
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+
+h3, h4, h5, h6 {
+  padding: 10px 0;
+  text-align: left;
+  width: 100%;
+}
+
+div.container {
+  max-width: 700px;
+  width: 100%;
+  padding: 40px;
+  margin: 10px auto;
+  overflow-x: auto;
+  background-color: var(--inverse);
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+div.container-large {
+  width: 100%;
+  padding: 40px;
+  margin: 10px auto;
+  overflow-x: auto;
+  background-color: var(--inverse);
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+h1 { font-size: 26px; }
+h2 { font-size: 24px; }
+h3 { font-size: 22px; }
+h4 { font-size: 20px; }
+h5 { font-size: 18px; }
+h6 { font-size: 16px; }
+
+section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 10px 2%;
+
+}
+
+input, textarea {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #dedede;
+  width: 100%;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid #9c9c9c;
+}
+
+textarea {
+  resize: vertical;
+}
+
+label, p {
+  font-size: 16px;
+  padding: 5px 0;
+}
+
+button {
+  padding: 8px;
+  background: var(--primary);
+  color: var(--inverse);
+  border: 0;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+a {
+  color: var(--primary);
+  padding: 5px;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-shadow: var(--box-shadow);
+  background-color: var(--primary);
+}
+
+nav a{
+  padding: 20px 10px;
+  text-decoration: none;
+  color: var(--inverse);
+}
+
+nav a::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: transparent ;
+}
+
+nav a.active::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--inverse);
+}
+nav img {
+  height: 30px;
+  width: auto;
+  object-fit: cover;
+}
+
+/* Table design */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  overflow-x: auto;
+  table-layout: fixed;
+}
+
+table td, table th {
+  border: 1px solid #dedede;
+  padding: 5px 10px;
+}
+
+table tr:hover {
+  background-color: rgb(236, 236, 236);
+}
+
+table th {
+  text-align: left;
+  border-bottom: 2px solid #45454555;
+  font-weight: 600;
+}
+
+tr > td {
+  word-wrap: break-word;
+  white-space: wrap;
+}
+
+td > button {
+  display: inline-block;
+}
+
+td img {
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+td a {
+  text-decoration: none;
+  padding: 8px;
+  background: var(--primary);
+  color: var(--inverse);
+  border: 0;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+
+button a {
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  padding: 8px;
+  border: 0;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+strong {
+  font-weight: 700;
+}
+
+
+
+/*Coloração de foregrond*/
+
+.red {
+  color: var(--red);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.green {
+  color: var(--green);
+}
+
+/* Coloração de background */
+td .red, button.red {
+  background-color: var(--red);
+  color: var(--inverse);
+}
+
+td .orange, button.orange {
+  background-color: var(--orange);
+  color: var(--inverse);
+}
+
+td .blue, button.blue {
+  background-color: var(--blue);
+  color: var(--inverse);
+}
+
+td .green, button.green {
+  background-color: var(--green);
+  color: var(--inverse);
+}
+
+
+/* Footer */
+footer {
+  margin: 10px auto;
+  margin-bottom: 0;
+  background-color: var(--primary);
+  padding: 20px 2%;
+}
+
+footer p {
+  color: var(--inverse);
+  text-align: center;
+}
